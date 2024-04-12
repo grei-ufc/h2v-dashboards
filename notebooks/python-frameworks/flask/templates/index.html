@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folium Map</title>
+    <!-- Stylesheets utilizadas -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheets/reset.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" />
+</head>
+
+<body>
+
+    <div class="info-container">
+        <div class="project-container">
+            <h1>Mapa Folium</h1>
+        </div>
+        <div class="text-container">
+            <h1>Geradoras Eólicas e Fotovoltaicas do Brasil</h1>
+            <p>Mapa interativo que fornece informações das geradoras eólicas e fotovoltaicas localizadas no Brasil.
+                O mapa foi gerado por meio das bibliotecas python Folium e Geopandas, e a aplicação desenvolvida por
+                meio do microframework Flask e ferramentas básicas de Front-End (HTML, CSS e Javascript)</p>
+            <h1>Informações sobre o projeto</h1>
+            <p>Projeto desenvolvido para a apresentação da ferramenta Flask para o desenvolvimento de dashboards e aplicações
+                com Python.
+            </p>
+
+            <p class="credits">Grupo de Redes Elétricas Inteligentes (GREI)</p>
+            <p class="credits">Universidade Federal do Ceará</p>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <div id="map">
+            <iframe src="../static/data/mapa_geradoras_brasil.html"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
